@@ -7,16 +7,4 @@
   height: calc(100vh - 48px);
 }
 
-/* 
 
-// <Resizable
-        //     className=' flex-grow border-[5px] border-red-600'
-        //     defaultSize={{
-        //         width: "100%",
-        //         height: "100%"
-        //     }}
-        //     // minWidth="100%"
-        //     maxWidth="60%"
-
-        // // snap={{ x: [700] }}
-        // > */
