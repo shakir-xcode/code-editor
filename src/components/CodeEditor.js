@@ -65,20 +65,6 @@ function CodeEditor() {
         }
     }
 
-    // useEffect(() => {
-    //     const id = setTimeout(() => {
-    //         setTemplate(`
-    //         <html>
-    //             <body>${html}</body>
-    //             <style>${css}</style>
-    //             <script>${js}</script>
-    //         </html>
-    //     `)
-
-    //     }, 300)
-    //     return () => clearTimeout(id)           //every time useEffect executes the previous 
-    // }, [])                                      // setTimeout will be canceled
-
 
     useEffect(() => {
         setHtml(localStorage.getItem(`${AppKey}html`))
