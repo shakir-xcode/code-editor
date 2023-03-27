@@ -14,7 +14,6 @@ function Navbar({ saveLocally }) {
 
             <button title='save' onClick={() => saveLocally()}
                 className='bg-blue-400 w-16 h-8 rounded-lg text-white hover:bg-blue-600'>Save
-                {/* <img className='w-4 h-4 m-auto object-cover' src={save} alt='save' /> */}
             </button>
 
         </div>
