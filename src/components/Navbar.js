@@ -3,7 +3,7 @@ import save from "../assets/save.png"
 import editorLogo from "../assets/editorLogo.png"
 
 
-function Navbar({ saveLocally }) {
+function Navbar({ saveLocally, resetState }) {
 
     return (
         <div className='h-[48px] flex justify-between items-center  bg-gray-500 px-3 py-2'>
