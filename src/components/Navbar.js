@@ -12,9 +12,14 @@ function Navbar({ saveLocally }) {
                 <h1 className='text-xl sm:text-2xl md:text-3xl [font-family:roboto]  text-white'>Code Editor</h1>
             </div>
 
+           <div className='flex gap-1 flex-wrap'>
+                <button title='Reset All' onClick={() => resetState()}
+                    className='bg-blue-400 w-16 h-8 rounded-lg text-white hover:bg-blue-600'>Reset
+                </button>
             <button title='save' onClick={() => saveLocally()}
                 className='bg-blue-400 w-16 h-8 rounded-lg text-white hover:bg-blue-600'>Save
             </button>
+           </div>
 
         </div>
     )
