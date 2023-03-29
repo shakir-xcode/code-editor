@@ -78,6 +78,12 @@ function CodeEditor() {
         localStorage.setItem(`${AppKey}css`, css)
         localStorage.setItem(`${AppKey}js`, js)
     }
+    
+    const resetState = () => {
+        setHtml('');
+        setCss('');
+        setJs('');
+    }
 
     const toggleMobileEditor = (editor) => {
         const editorPanel = document.querySelectorAll('.mobile-editor')
@@ -148,7 +154,7 @@ function CodeEditor() {
                 </div>
                 <div className='  md:w-[50vw] h-[100vh]'>
                     <div className="hidden md:block" >
-                        <Navbar saveLocally={saveToLocalStorage} />
+                        <Navbar saveLocally={saveToLocalStorage} resetState={resetState} />
                     </div>
                     <OutputPane html={html} css={css} js={js} />
                 </div>
