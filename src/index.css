@@ -2,31 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #fff;
-  --text-primary: #000;
-  --text-secondary: #8e05c2;
-  --accent: #8e05c2;
-  --border: #333;
-  --form-bg: #fff;
-} */
-
-/* 
-[data-theme="dark"] {
-  --background: #000;
-  --text-primary: #fff;
-  --text-secondary: #8e05c2;
-  --accent: #8e05c2;
-  --border: #808080;
-  --form-bg: #191919;
-} */
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(51, 51, 51);
 }
 
 .mobile-editor {
