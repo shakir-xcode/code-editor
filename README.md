@@ -11,6 +11,7 @@ A minimalist code editor that can be used to run, test and visualize html, css a
 <ul>
   <li>Powered by React</li>
   <li>Fast and light weight</li>
+  <li>Uses localStorage to save code</li>
   <li>Supports html, css and javascipt</li>
 </ul>
 
