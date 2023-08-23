@@ -5,7 +5,9 @@ import OutputPane from './OutputPane'
 import htmlIcon from "../assets/htmlIcon.png";
 import cssIcon from "../assets/cssIcon.png";
 import javascriptIcon from "../assets/javascriptIcon.png";
-
+import { htmlBoilerplate } from "../config.js";
+import { cssBoilerPlate } from '../config.js';
+import { jsBoilerplate } from '../config.js';
 
 
 const AppKey = "codepen-clone"
@@ -67,9 +69,9 @@ function CodeEditor() {
 
 
     useEffect(() => {
-        setHtml(localStorage.getItem(`${AppKey}html`))
-        setCss(localStorage.getItem(`${AppKey}css`))
-        setJs(localStorage.getItem(`${AppKey}js`))
+        setHtml(localStorage.getItem(`${AppKey}html`) || htmlBoilerplate)
+        setCss(localStorage.getItem(`${AppKey}css`) || cssBoilerPlate)
+        setJs(localStorage.getItem(`${AppKey}js`) || jsBoilerplate)
     }, [])
 
 
@@ -78,7 +80,7 @@ function CodeEditor() {
         localStorage.setItem(`${AppKey}css`, css)
         localStorage.setItem(`${AppKey}js`, js)
     }
-    
+
     const resetState = () => {
         setHtml('');
         setCss('');
