@@ -8,7 +8,7 @@ function OutputPane({ html, css, js }) {
 </html>`
 
     return (
-        <div className='w-full  output-pane-height grow '>
+        <div className='w-full  output-pane-height grow'>
             {/* bg-[#2a373f] */}
             <iframe className=' w-full h-full'
                 title='Output'

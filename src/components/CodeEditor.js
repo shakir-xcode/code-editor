@@ -113,7 +113,7 @@ function CodeEditor() {
 
     return (
         <>
-            <div className='flex flex-col md:flex-row h-screen'>    { /*1*/}
+            <div className='flex flex-col md:flex-row h-screen '>    { /*1*/}
                 <div className='  bg-[#263238] hidden md:block  w-[50vw] '>        { /*2*/}
                     <Editor editorName="HTML" lang="xml" value={html} changeHandler={setHtml} icon={htmlIcon}
                         editorState={htmlEditorState} jsFullOpenState={jsEditorFullyOpen} handleExpand={handleExpandY} />       { /*3*/}
@@ -126,8 +126,8 @@ function CodeEditor() {
                 </div>
 
                 {/* Mobile Layout */}
-                <div className="block md:hidden" >
-                    <Navbar saveLocally={saveToLocalStorage} />
+                <div className="block md:hidden " >
+                    <Navbar saveLocally={saveToLocalStorage} resetState={resetState} />
                 </div>
                 <div className=' relative bg-[#263238] block md:hidden '>        { /*2*/}
 
@@ -154,7 +154,9 @@ function CodeEditor() {
                             mobileView={true} />
                     </div>
                 </div>
-                <div className='  md:w-[50vw] h-[100vh]'>
+
+
+                <div className='  md:w-[50vw] h-full '>
                     <div className="hidden md:block" >
                         <Navbar saveLocally={saveToLocalStorage} resetState={resetState} />
                     </div>

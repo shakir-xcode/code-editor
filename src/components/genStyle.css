@@ -7,4 +7,9 @@
   height: calc(100vh - 48px);
 }
 
+@media only screen and (max-width: 768px) {
+  .output-pane-height {
+    height: 100%;
+  }
+}
 
